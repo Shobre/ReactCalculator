@@ -51,7 +51,7 @@ class Calculator extends Component {
         let bvalue = ["clear", "7", "4", "1", ".", "/", "8", "5", "2", "0", "*", "9", "6", "3", "null", "-"]
         let buttons = []
         for(let i = 0; i < blabel.length; i++){
-            buttons.push( <Button onClick={this.handleClick} label={blabel[i]} value={bvalue[i]} />)
+            buttons.push( <Button onClick={this.handleClick} key={i} label={blabel[i]} value={bvalue[i]} />)
         }
         return buttons
     }
